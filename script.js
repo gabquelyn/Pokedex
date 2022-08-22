@@ -83,15 +83,15 @@ async function moreDetails(data_json){
 
     details.innerHTML = `
     <div class = 'header'>
+        <div class = 'img-container' style = 'background-color: ${colors[color]}'>
+        <img src = '${sprites.back_default}'>
+    </div>
         <ul>
         <li>
             <h3>Name: <span>${_}</span></h3></li>
             <li><h3>Height:<span>${height} ft.</span></h3></li>
             <li><h3>Weight: <span>${weight} kg.</span></h3></li>
         </ul>
-        <div class = 'img-container' style = 'background-color: ${colors[color]}'>
-            <img src = '${sprites.back_default}'>
-        </div>
     </div>
 
     <div class = 'more-details'>
