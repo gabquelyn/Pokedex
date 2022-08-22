@@ -14,7 +14,7 @@ form.addEventListener('submit', (e)=>{
         getProperties(APIURL+inputNumber);
 
         setTimeout(()=>{
-            window.location.reload();
+            // window.location.reload();
         }, 10000);
     
 
@@ -23,7 +23,7 @@ form.addEventListener('submit', (e)=>{
         input.value = '';
         createErrorCard();
         setTimeout(()=>{
-            window.location.reload();
+            // window.location.reload();
         }, 4000);
     }
 
@@ -86,8 +86,8 @@ async function moreDetails(data_json){
         <ul>
         <li>
             <h3>Name: <span>${_}</span></h3></li>
-            <li><h3>Height:<span>${height}</span></h3></li>
-            <li><h3>Weight: <span>${weight}</span></h3></li>
+            <li><h3>Height:<span>${height} ft.</span></h3></li>
+            <li><h3>Weight: <span>${weight} kg.</span></h3></li>
         </ul>
         <div class = 'img-container' style = 'background-color: ${colors[color]}'>
             <img src = '${sprites.back_default}'>
