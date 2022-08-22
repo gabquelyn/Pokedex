@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mulish:wght@300;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+        background-color: #003349;
+        padding: 2rem 4rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 2px 20px grey;
+        border-radius: 15px;
+        
+}
+
+.container h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100px;
+    margin-bottom: 1rem;
+}
+
+.container form input{
+    height: 4rem;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    width: 90px;
+    width: 90%;
+    background-color: #DEFDE0;
+}
+
+.container input:focus{
+    outline: none;
+}
+
+.details
+{
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    padding: 2rem;
+    word-wrap: break-word;
+    max-width: 600px;
+  
+}
+
+.details ul{
+    list-style-type: none;
+}
+
+.details ul li h3{
+    display: inline-block;
+}
+
+.details .header img{
+    width: 200px;
+    height: 200px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul li{
+    margin: 1rem 0rem;
+}
+
+.header ul li span{
+    margin-left: 10px;
+}
+
+.more-details
+{
+    margin-top: 20px;
+}
+
+.more-details h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.more-details h5{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background-color: black;
+    color: #fff;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.more-details p{
+    font-size: 20px;
+}
+
+.img-container{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid black;
+}
