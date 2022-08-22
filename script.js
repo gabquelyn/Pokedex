@@ -14,7 +14,7 @@ form.addEventListener('submit', (e)=>{
         getProperties(APIURL+inputNumber);
 
         setTimeout(()=>{
-            // window.location.reload();
+            window.location.reload();
         }, 10000);
     
 
@@ -23,7 +23,7 @@ form.addEventListener('submit', (e)=>{
         input.value = '';
         createErrorCard();
         setTimeout(()=>{
-            // window.location.reload();
+            window.location.reload();
         }, 4000);
     }
 

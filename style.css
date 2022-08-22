@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 130vh;
+    height: 100vh;
 }
 
 .container{
@@ -74,8 +74,12 @@ body{
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 4rem;
 }
 
+.header ul{
+    padding: 0;
+}
 .header ul li{
     margin: 1rem 0rem;
 }
@@ -137,5 +141,9 @@ body{
     .header ul
     {
         padding: 0;
+    }
+
+    body{
+        height: 130vh;
     }
 }
