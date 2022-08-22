@@ -88,9 +88,9 @@ async function moreDetails(data_json){
     </div>
         <ul>
         <li>
-            <h3>Name: <span>${_}</span></h3></li>
-            <li><h3>Height:<span>${height} ft.</span></h3></li>
-            <li><h3>Weight: <span>${weight} kg.</span></h3></li>
+            <h3>Name : <span>${_}</span></h3></li>
+            <li><h3>Height :<span>${height} ft.</span></h3></li>
+            <li><h3>Weight : <span>${weight} kg.</span></h3></li>
         </ul>
     </div>
 
