@@ -13,6 +13,29 @@ body{
     height: 100vh;
 }
 
+.progress-container{
+    background-color: #003349;
+    height: 4px;
+    width: 100%;
+    animation: grow 40s linear infinite;
+    transform-origin: left;
+    margin-bottom: 20px;
+}
+
+.progress-container1{
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 4s linear infinite;
+    transform-origin: left;
+    margin-bottom: 20px;
+}
+
+@keyframes grow{
+    0%{
+        transform: scaleX(0);
+    }
+}
 .container{
         background-color: #003349;
         padding: 2rem 4rem;

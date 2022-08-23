@@ -12,10 +12,9 @@ form.addEventListener('submit', (e)=>{
         input.value = '';
         content.innerHTML = '';
         getProperties(APIURL+inputNumber);
-
-        setTimeout(()=>{
-            window.location.reload();
-        }, 60000);
+        
+        reloadPage();
+        
     
 
     }else{
@@ -24,12 +23,17 @@ form.addEventListener('submit', (e)=>{
         createErrorCard();
         setTimeout(()=>{
             window.location.reload();
-        }, 4000);
+        }, 3800);
     }
 
     
 })
 
+function reloadPage(){
+    setTimeout(()=>{
+        window.location.reload();
+    }, 39900)
+}
 
 const colors = {
     fire: '#FDDFDF',
@@ -81,7 +85,9 @@ async function moreDetails(data_json){
     details.classList.add('details');
     details.style.backgroundColor = `#fff`
 
+
     details.innerHTML = `
+    <div class = 'progress-container'></div>
     <div class = 'header'>
         <div class = 'img-container' style = 'background-color: ${colors[color]}'>
         <img src = '${sprites.back_default}'>
@@ -108,5 +114,13 @@ async function moreDetails(data_json){
 
 function createErrorCard(){
     content.innerHTML = ''
-    content.innerHTML = '<h4>Oops! <i class="fa-regular fa-face-frown">,</i> That wasn\'t a number.</h4>'
+    content.innerHTML = `
+    <div class = 'progress-container1'></div>
+    <h4>Oops! <i class="fa-regular fa-face-frown"></i>, That wasn\'t a number.</h4>`
+}
+
+
+function createNodata(){
+    content.innerHTML = '';
+    content.innerHTML = '<h4>Oops! <i class="fa-solid fa-poo"></i> There must be an error.</h4>';
 }
